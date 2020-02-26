@@ -1,0 +1,113 @@
+\documentclass[a4paper, titlepage,12pt]{article}
+\usepackage[margin=3.7cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish,english]{babel}
+\usepackage{csquotes}
+\usepackage[hyphens]{url}
+\usepackage{amsmath,amssymb,amsthm, amsfonts}
+\usepackage[backend=biber,citestyle=ieee, backref]{biblatex}
+\usepackage{algorithm}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{newfloat}
+\usepackage{varioref, prettyref}
+\usepackage{hyperref, cleveref}
+\usepackage{fancyheadings}
+\usepackage{multicol}
+\usepackage{tocloft}
+\usepackage[]{appendix}
+\usepackage[yyyymmdd]{datetime}
+\usepackage{xcolor}
+\renewcommand{\dateseparator}{--}
+
+\addbibresource{literature.bib}
+
+%To follow Miun Template
+\usepackage{mathpazo} %Set Palatino as main font
+\usepackage{verbatimbox}
+
+\usepackage{titlesec}
+\usepackage{helvet}
+\definecolor{thesisyellow}{HTML}{FFE500}  
+\definecolor{thesisblue}{HTML}{0007BE} 
+\usepackage{tikz}
+
+\titleformat{\section}
+  {\sffamily\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\sffamily\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\sffamily\large\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}[runin]
+  {\sffamily\normalsize\bfseries}{\theparagraph}{1em}{}
+
+\addto\captionsenglish{
+  \renewcommand{\contentsname}%
+    {Table of Contents}%
+}
+
+\title{Main Title}
+\author{Author}
+
+%\date{\today}
+
+\DeclareFloatingEnvironment[placement={!ht},name=List]{mylist}
+
+\usepackage{etoolbox}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+\begin{document}
+  \include{titlepage}
+  \fontfamily{ppl}
+  \pagestyle{fancy}
+  \fancyhf{}
+  \fancyhead[LH]{Main Title \\ Author}
+  \fancyhead[RH]{\today}
+  \fancyfoot[C]{\thepage}
+  \setlength{\headheight}{30pt}
+  \pagenumbering{roman}
+  \include{00-abstract}
+  \newpage
+  \include{00-acknowledgements}
+  \newpage
+  \tableofcontents
+  \newpage
+
+  \phantomsection
+  \listoffigures
+  \addcontentsline{toc}{section}{List of Figures}
+  \newpage
+
+  \phantomsection
+  \listoftables
+  \addcontentsline{toc}{section}{List of Tables}
+  \newpage
+
+  \phantomsection
+  \listofalgorithms
+  \addcontentsline{toc}{section}{List of Algorithms}
+  \newpage
+
+  \include{00-terminology}
+  \newpage
+  \pagenumbering{arabic}
+  \include{01-intro}
+  \include{02-theory}
+  \include{03-method}
+  \include{04-construction}
+  \include{05-result}
+  \include{06-discussion}
+  \include{07-conclusions}
+  \printbibliography{}
+  \newpage
+  \pagestyle{empty}
+  \clearpage\mbox{}\clearpage
+  \pagestyle{fancy}
+  \appendix
+  \noappendicestocpagenum
+  \setcounter{page}{1}
+  \include{appendices/taxonomies}
+\end{document}
