@@ -1,77 +1,33 @@
-  \pagestyle{empty}
+  
   \begin{titlepage}
-	\addtolength{\hoffset}{-2.7cm}
-	\addtolength{\voffset}{-2.7cm}
-  \newgeometry{margin=1cm}
-    \begin{tabular}{@{}c@{}}
-      % For master thesis use the following color schemes:
-      %  \colorbox{thesisyellow} 
-      %  \textcolor{black} 
-      % For university diploma and bachelor thesis use the following color
-      % schemes:
-      % \colorbox{thesisblue} 
-      % \textcolor{white}
-    		\colorbox{thesisblue}{%
-        \textcolor{white}{%
-     			\begin{minipage}[c][22,1cm][c]{18.67cm}
-						\vspace*{8cm}
-  					\begin{center}
-            \begin{tabular}{l}
-            {\fontfamily{phv}\selectfont{%
-							\LARGE{\textbf{Independent degree project --- second cycle}}}
-						}\\
-            \\
-            {\fontfamily{phv}\selectfont{%
-            	\Large{\textit{Master's thesis}}}
-						}\\
-            \\
-            \\
-            \\
-            \\
-            \\
-            \\
-            \\
-            \\
-            \\
-            \\
-            {\fontfamily{phv}\selectfont{%
-            	\normalsize\textit{{Computer Engineering}}}
-						}\\
-            \\
-            {\fontfamily{phv}\selectfont{%
-            	\normalsize{\textbf{Title of thesis}}}
-						}\\
-						\\
-            \\
-            {\fontfamily{phv}\selectfont{%
-            	\normalsize{\textbf{Author}}}
-						}\\
-          \end{tabular}
-          \end{center}
-      		\end{minipage}
-        } % End textcolor
-    		} % End colorbox
-        \\
-		\includegraphics[width=10cm]{Pictures/miun_logo.png}
-  \end{tabular}
-    \newpage
-		\addtolength{\voffset}{2.7cm}
-		\addtolength{\hoffset}{2.7cm}
-    \vspace*{15cm}
+  \setlength\headheight{59pt}
+  \renewcommand{\headrulewidth}{0pt}
+  \thispagestyle{fancy}
+  \fancyhf{}
+  \rhead{\includegraphics[width=41mm]{Pictures/miun_logo.png}}
+  \fancyfoot{}
+    \vspace*{0.5cm}
+    {\fontfamily{phv}\selectfont{%
+    	\Large{\textbf{Title}}}
+      \\
+      \\
+      \large{Subtitle}
+    \\
+    \\
+    \\
+    	\large{Author}}
+    \vspace*{13cm}
+
     \fontfamily{phv}
+    \renewcommand{\arraystretch}{0.5}
     \begin{tabular}{l}
-     \textbf{MID SWEDEN UNIVERSITY}\\
-     Department of Information Systems and Technology (IST)\\
-     \\
-     \normalsize{\textbf{Examiner:}} \normalsize{Examiner,
-       \href{mailto:examiner@miun.se}{examiner@miun.se}}\\
-     \normalsize{\textbf{Supervisor:}} \normalsize{Supervisor, 
-       \href{mailto:supervisor@miun.se}{supervisor@miun.se}}\\
-     \normalsize{\textbf{Author:}} \normalsize{Author, 
-       \href{mailto:author@student.miun.se}{author@student.miun.se}}\\ 
-     \normalsize{\textbf{Degree programme:}} \normalsize{Study Programme, xx credits}\\
-     \normalsize{\textbf{Main field of study:}} \normalsize{Field of Study}\\
-     \normalsize{\textbf{Semester, year:}} \normalsize{Semester, year}\\
+      \footnotesize{Type of Document --- Course Name}\\
+      \footnotesize{\textbf{Main field of study:} Field of Study}\\
+      \footnotesize{\textbf{Credits:} 15 hp}\\
+      \footnotesize{\textbf{Semester, year:} Semester, year}\\
+      \footnotesize{\textbf{Supervisor:} Supervisor}\\
+      \footnotesize{\textbf{Examiner:} Examiner}\\
+      \footnotesize{\textbf{Degree programme:} Study Programme, xx credits}\\
     \end{tabular}
   \end{titlepage}
 
