@@ -41,10 +41,17 @@
 \titleformat{\paragraph}[runin]
   {\sffamily\normalsize\bfseries}{\theparagraph}{1em}{}
 
+
 \addto\captionsenglish{
   \renewcommand{\contentsname}%
-    {Table of Contents}%
+  {\sffamily{Table of Contents}}%
 }
+\renewcommand{\cftsecfont}{\bfseries\sffamily}
+\renewcommand{\cftsubsecfont}{\sffamily}
+\renewcommand{\cftsubsubsecfont}{\sffamily}
+\renewcommand{\cftsecpagefont}{\sffamily}
+\renewcommand{\cftsubsecpagefont}{\sffamily}
+\renewcommand{\cftsubsubsecpagefont}{\sffamily}
 
 \title{Main Title}
 \author{Author}
@@ -101,6 +108,7 @@
   \include{05-result}
   \include{06-discussion}
   \include{07-conclusions}
+  \addcontentsline{toc}{section}{References}
   \printbibliography{}
   \newpage
   \pagestyle{empty}
