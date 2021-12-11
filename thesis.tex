@@ -1,102 +1,67 @@
-\documentclass[a4paper, titlepage,12pt]{article}
+\documentclass[english]{miunthesis}
 \usepackage[margin=35mm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[swedish,english]{babel}
+\usepackage[]{babel}
 \usepackage{csquotes}
-\usepackage[hyphens]{url}
-\usepackage{amsmath,amssymb,amsthm, amsfonts}
 \usepackage[backend=biber,citestyle=ieee, backref]{biblatex}
-\usepackage{algorithm}
 \usepackage{booktabs}
 \usepackage{setspace}
-\usepackage{parskip}
 \usepackage{float}
 \usepackage{newfloat}
-\usepackage{varioref, prettyref}
-\usepackage{hyperref, cleveref}
 \usepackage{fancyhdr}
-\usepackage{multicol}
-\usepackage{tocloft}
 \usepackage[]{appendix}
-\usepackage[yyyymmdd]{datetime}
 \usepackage{xcolor}
-\renewcommand{\dateseparator}{--}
 
 \addbibresource{literature.bib}
 
-%To follow Miun Template
-\usepackage{mathpazo} %Set Palatino as main font
-\usepackage{verbatimbox}
-
-\usepackage{titlesec}
-\usepackage{helvet}
-\usepackage{tikz}
-
-\titleformat{\section}
-  {\sffamily\LARGE\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}
-  {\sffamily\Large\bfseries}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}
-  {\sffamily\large\bfseries}{\thesubsubsection}{1em}{}
-\titleformat{\paragraph}[runin]
-  {\sffamily\normalsize\bfseries}{\theparagraph}{1em}{}
-
-
-\addto\captionsenglish{
-  \renewcommand{\contentsname}%
-  {\sffamily{Table of Contents}}%
-}
-\renewcommand{\cftsecfont}{\bfseries\sffamily}
-\renewcommand{\cftsubsecfont}{\sffamily}
-\renewcommand{\cftsubsubsecfont}{\sffamily}
-\renewcommand{\cftsecpagefont}{\sffamily}
-\renewcommand{\cftsubsecpagefont}{\sffamily}
-\renewcommand{\cftsubsubsecpagefont}{\sffamily}
-
 \title{Main Title}
+\subtitle{Subtitle}
 \author{Author}
 
-%\date{\today}
+\courseid{DTXXX}
+\coursename{Independent degree project}
+\coursecredits{30 hp}
+
+%\semester{Spring}
+\fieldofstudy{Computer Science}
+\studyprogramme{Master programme}
+\studyprogrammecredits{120 hp}
+
+\examiner{Nomen Nescio}
+\supervisor{John Doe}
 
 \DeclareFloatingEnvironment[placement={!ht},name=List]{mylist}
 
-\usepackage{etoolbox}
-
-\setcounter{tocdepth}{4}
-\setcounter{secnumdepth}{4}
-
 \begin{document}
-  \include{titlepage}
-  \fontfamily{ppl}
+  \maketitle
+  
   \pagestyle{fancy}
   \fancyhf{}
-  \renewcommand{\headrulewidth}{0pt}
-  \fancyhead[LH]{Main Title \\ Author}
-  \fancyhead[RH]{\today}
   \fancyfoot[C]{\thepage}
-  \setlength{\headheight}{30pt}
   \pagenumbering{roman}
   \include{00-abstract}
   \newpage
+  
   \include{00-acknowledgements}
   \newpage
+  
   \tableofcontents
   \newpage
 
   \phantomsection
   \listoffigures
-  \addcontentsline{toc}{section}{List of Figures}
+  \addcontentsline{toc}{section}{\translate{List of Figures}}
   \newpage
 
   \phantomsection
   \listoftables
-  \addcontentsline{toc}{section}{List of Tables}
+  \addcontentsline{toc}{section}{\translate{List of Tables}}
   \newpage
 
   \phantomsection
   \listofalgorithms
-  \addcontentsline{toc}{section}{List of Algorithms}
+  \addcontentsline{toc}{section}{\translate{List of Algorithms}}
   \newpage
 
   \include{00-terminology}
@@ -109,14 +74,12 @@
   \include{05-result}
   \include{06-discussion}
   \include{07-conclusions}
-  \addcontentsline{toc}{section}{References}
+  \addcontentsline{toc}{section}{\translate{References}}
   \printbibliography{}
-  \newpage
-  \pagestyle{empty}
-  \clearpage\mbox{}\clearpage
+  \newpage\clearpage
   \pagestyle{fancy}
+  \setcounter{page}{1}
   \appendix
   \noappendicestocpagenum
-  \setcounter{page}{1}
-  \include{Appendices/taxonomies}
+  \include{Appendices/appA}
 \end{document}

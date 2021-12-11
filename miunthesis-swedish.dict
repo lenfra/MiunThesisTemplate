@@ -1,0 +1,32 @@
+\ProvidesDictionary{miunthesis}{Swedish}
+\providetranslation{Spring}{Vår} 
+\providetranslation{Fall}{Höst}
+\providetranslation{Semester}{Termin}
+\providetranslation{Year}{År}
+\providetranslation{Main field of study}{Huvudämne}
+\providetranslation{Computer Science}{Datorteknik}
+\providetranslation{Credits}{Högskolepoäng}
+\providetranslation{Supervisor}{Handledare}
+\providetranslation{Examiner}{Examinator}
+\providetranslation{Degree programme}{Utbildningsprogram}
+\providetranslation{Acknowledgements}{Tack}
+\providetranslation{Terminology}{Terminologi}
+\providetranslation{Introduction}{Inledning}
+\providetranslation{Background and problem motivation}{Bakgrund och problembeskrivning}
+\providetranslation{Overall aim}{Syfte}
+\providetranslation{Introduction}{Inledning}
+\providetranslation{Scope}{Avgränsningar}
+\providetranslation{Concrete and verifiable goals}{Precisering av frågeställningen}
+\providetranslation{Outline}{Rapportens disposition}
+\providetranslation{Contributions}{Författarnas bidrag}
+\providetranslation{Theory}{Teori}
+\providetranslation{Method}{Metod}
+\providetranslation{Construction}{Konstruktion}
+\providetranslation{Result}{Resultat}
+\providetranslation{Discussion}{Diskussion}
+\providetranslation{Conclusion}{Slutsats}
+\providetranslation{References}{Referenser}
+\providetranslation{Appendice}{Bilaga}
+\providetranslation{List of Figures}{Figurer}
+\providetranslation{List of Tables}{Tabeller}
+\providetranslation{List of Algorithms}{Algoritmer}

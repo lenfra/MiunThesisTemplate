@@ -1,0 +1,31 @@
+\ProvidesDictionary{miunthesis}{English}
+\providetranslation{Spring}{Spring}
+\providetranslation{Fall}{Fall}
+\providetranslation{Semester}{Semester}
+\providetranslation{Year}{Year}
+\providetranslation{Main field of study}{Main field of study}
+\providetranslation{Computer Science}{Compuer Science}
+\providetranslation{Credits}{Credits}
+\providetranslation{Supervisor}{Supervisor}
+\providetranslation{Examiner}{Examiner}
+\providetranslation{Degree programme}{Degree programme}
+\providetranslation{Acknowledgements}{Acknowledgements}
+\providetranslation{Terminology}{Terminology}
+\providetranslation{Introduction}{Introduction}
+\providetranslation{Background and problem motivation}{Background and problem motivation}
+\providetranslation{Overall aim}{Overall aim}
+\providetranslation{Introduction}{Introduction}
+\providetranslation{Scope}{Scope}
+\providetranslation{Concrete and verifiable goals}{Concrete and verifiable goals}
+\providetranslation{Outline}{Outline}
+\providetranslation{Contributions}{Contribution}
+\providetranslation{Theory}{Theory}
+\providetranslation{Method}{Method}
+\providetranslation{Construction}{Construction}
+\providetranslation{Result}{Result}
+\providetranslation{Discussion}{Discussion}
+\providetranslation{Conclusion}{Conclusion}
+\providetranslation{Appendice}{Appendice}
+\providetranslation{List of Figures}{List of Figures}
+\providetranslation{List of Tables}{List of Tables}
+\providetranslation{List of Algorithms}{List of Algorithms}
