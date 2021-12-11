@@ -14,6 +14,7 @@
 \RequirePackage{tikz}
 \RequirePackage{mathpazo}
 \RequirePackage{verbatimbox}
+\RequirePackage{fancyhdr}
 
 
 %Set timeformat
@@ -168,6 +169,8 @@
 \setcounter{secnumdepth}{3}
 
 \renewcommand{\dateseparator}{--}
+
+\renewcommand{\headrulewidth}{0pt}
 
 \newif\if@titlepage
 \@titlepagetrue
