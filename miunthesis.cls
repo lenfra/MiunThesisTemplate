@@ -50,7 +50,9 @@
 \RequirePackage{varioref, prettyref}
 \RequirePackage{hyperref}
 \RequirePackage{cleveref}
+\RequirePackage[backend=biber,citestyle=ieee, backref]{biblatex}
 
+\setlength\bibitemsep{0.5\baselineskip}
 
 \pdfstringdefDisableCommands{%
   \def\\{}%
