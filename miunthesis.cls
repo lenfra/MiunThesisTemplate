@@ -196,7 +196,7 @@
   \renewcommand{\headrulewidth}{0pt}
   \thispagestyle{fancy}
   \fancyhf{}
-  %\rhead{\includegraphics[width=41mm]{Pictures/miun_logo.png}}
+  \rhead{\includegraphics[width=41mm]{Pictures/miun_logo.png}}
   \fancyfoot{}
     \vspace*{0.5cm}
     \fontfamily{phv}\selectfont{%
@@ -213,7 +213,7 @@
     \fontfamily{phv}
     \renewcommand{\arraystretch}{0.5}
     \begin{tabular}{l}
-      \footnotesize{Type of Document --- \@miunthesis@coursename}\\
+      \footnotesize{\@miunthesis@coursename}\\
       \footnotesize{\textbf{\translate{Main field of study}:} \@miunthesis@fieldofstudy}\\
       \footnotesize{\textbf{\translate{Credits}:} \@miunthesis@coursecredits}\\
       \footnotesize{\textbf{\translate{Semester}, \translate{Year}:} \@miunthesis@semester, \the\year{}}\\
