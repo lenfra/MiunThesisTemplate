@@ -12,6 +12,11 @@
                 bottom=35mm]
                 {geometry}
 
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[]{babel}
+
+
 \RequirePackage[]{translator}
 \usedictionary{miunthesis}
 
