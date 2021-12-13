@@ -4,6 +4,14 @@
 \ProvidesClass{miunthesis}
 
 %% Required packages
+
+\RequirePackage[a4paper,
+                left=35mm,
+                right=40mm,
+                top=37mm,
+                bottom=35mm]
+                {geometry}
+
 \RequirePackage[]{translator}
 \usedictionary{miunthesis}
 
