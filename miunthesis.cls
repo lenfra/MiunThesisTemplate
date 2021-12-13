@@ -231,31 +231,31 @@
 
 \renewcommand\section{\@startsection{section}{1}
                                     {\z@}% indent
-                                    {-3.5ex \@plus -1ex \@minus -.2ex}% beforeskip
-                                    {2.3ex \@plus.2ex}% afterskip
+                                    {2.85pt \@plus -1ex \@minus -.2ex}% beforeskip
+                                    {1pt \@plus.2ex}% afterskip
                                     {\sffamily\LARGE\bfseries}}
                                     
 \renewcommand\subsection{\@startsection{subsection}{2}
                                     {\z@}% indent
-                                    {1em  \@plus 0.1ex \@minus -0.05ex}%
-                                    {1em \@plus 0.2em}%
+                                    {2.85pt  \@plus 0.1ex \@minus -0.05ex}%
+                                    {1pt \@plus 0.2em}%
                                     {\sffamily\Large\bfseries}}
                                     
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}
                                     {\z@}% indent
-                                    {1em \@plus -1ex \@minus -.2ex}%
-                                    {1em \@plus -1ex \@minus -.2ex}%
+                                    {2.85pt \@plus -1ex \@minus -.2ex}%
+                                    {1pt \@plus -1ex \@minus -.2ex}%
                                     {\sffamily\large\bfseries}}
                                      
 \renewcommand\paragraph{\@startsection{paragraph}{4}
                                     {\z@}% indent
-                                    {1em}%
-                                    {1em}%
+                                    {2.85pt}%
+                                    {1pt}%
                                     {\sffamily\normalsize\bfseries}}
                                     
 \renewcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
-                                       {1em \@plus -1ex \@minus -.2ex}%
-                                       {1em \@plus -1ex \@minus -.2ex}%
+                                       {2.85pt \@plus -1ex \@minus -.2ex}%
+                                       {1pt \@plus -1ex \@minus -.2ex}%
                                       {\ssfamily\normalsize\bfseries}}
 
 %% Table of Contents
