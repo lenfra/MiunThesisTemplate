@@ -5,13 +5,6 @@
 
 %% Required packages
 
-\RequirePackage[a4paper,
-                left=35mm,
-                right=40mm,
-                top=37mm,
-                bottom=35mm]
-                {geometry}
-
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[]{babel}
@@ -21,20 +14,20 @@
 \usedictionary{miunthesis}
 
 \RequirePackage{algorithm}
+\RequirePackage{etoolbox}
 
 %Font packages to follow Miun Template
 \RequirePackage{helvet}
 \RequirePackage{tikz}
 \RequirePackage{mathpazo}
 \RequirePackage{verbatimbox}
-\RequirePackage{fancyhdr}
+\RequirePackage{setspace}
 
 
 %Set timeformat
 \RequirePackage[yyyymmdd]{datetime}
 
 %%This parts handles the options passed to the class.
-
 %% Define variables to use for generating title page
 \DeclareOption{titlepage}{\@titlepagetrue}
 \if@compatibility\else
@@ -50,6 +43,17 @@
 %Load in class, ensure that tocloft is loaded before parskip
 \RequirePackage[]{tocloft}
 \RequirePackage[]{parskip}
+
+\RequirePackage[a4paper,
+                left=35mm,
+                right=45mm,
+                top=38mm,
+                bottom=12mm,
+                includehead,
+                includefoot]
+                {geometry}
+\RequirePackage{fancyhdr}
+
 \RequirePackage{amsmath,amssymb,amsthm, amsfonts}
 \RequirePackage[hyphens]{url}
 \RequirePackage{varioref, prettyref}
@@ -80,41 +84,30 @@
     {
         %FALSE
     }
-}
-\newcommand{\@miunthesis@subtitle}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\subtitle'}
-		{You need a '\noexpand\subtitle' in the preamble of the document}
-}
-\DeclareRobustCommand*{\subtitle}[1]{%
-	\renewcommand{\@miunthesis@subtitle}{#1}
-	\let\subtitle\relax
+
+
 }
 
-\newcommand{\@miunthesis@courseid}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\courseid'}
-		{You need a '\noexpand\course' in the preamble of the document}
-}
-\DeclareRobustCommand*{\courseid}[1]{%
-	\renewcommand{\@miunthesis@courseid}{#1}
-	\let\courseid\relax
+\newcommand{\subtitle}[1]{
+  \newcommand{\@miunthesis@subtitle}{{#1}}
 }
 
-\newcommand{\@miunthesis@coursename}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\coursename'}
-		{You need a '\noexpand\course' in the preamble of the document}
+\newcommand{\coursecode}[1]{
+  \newcommand{\@miunthesis@coursecode}{{#1}}
 }
-\DeclareRobustCommand*{\coursename}[1]{%
-	\renewcommand{\@miunthesis@coursename}{#1}
-	\let\coursename\relax
+
+\newcommand{\registrationnr}[1]{
+  \newcommand{\@miunthesis@registrationnr}{{#1}}
+}
+
+\newcommand{\@miunthesis@projecttype}{%
+}
+\DeclareRobustCommand*{\projecttype}[1]{%
+      \renewcommand{\@miunthesis@projecttype}{#1}
+	    \let\projecttype\relax
 }
 
 \newcommand{\@miunthesis@coursecredits}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\coursecredits'}
-		{You need a '\noexpand\coursecredits' in the preamble of the document}
 }
 \DeclareRobustCommand*{\coursecredits}[1]{%
 	\renewcommand{\@miunthesis@coursecredits}{#1}
@@ -122,39 +115,17 @@
 }
 
 \newcommand{\@miunthesis@fieldofstudy}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\fieldofstudy'}
-		{You need a '\noexpand\fieldofstudy' in the preamble of the document}
 }
 \DeclareRobustCommand*{\fieldofstudy}[1]{%
 	\renewcommand{\@miunthesis@fieldofstudy}{#1}
 	\let\fieldofstudy\relax
 }
 
-\newcommand{\@miunthesis@studyprogramme}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\studyprogramme'}
-		{You need a '\noexpand\studyprogramme' in the preamble of the document}
-}
-\DeclareRobustCommand*{\studyprogramme}[1]{%
-	\renewcommand{\@miunthesis@studyprogramme}{#1}
-	\let\studyprogramme\relax
-}
-
-\newcommand{\@miunthesis@studyprogrammecredits}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\studyprogrammecredits'}
-		{You need a '\noexpand\studyprogrammecredits' in the preamble of the document}
-}
-\DeclareRobustCommand*{\studyprogrammecredits}[1]{%
-	\renewcommand{\@miunthesis@studyprogrammecredits}{#1}
-	\let\studyprogrammecredits\relax
+\newcommand{\studyprogramme}[1]{%
+  \newcommand{\@miunthesis@studyprogramme}{{#1}}
 }
 
 \newcommand{\@miunthesis@examiner}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\examiner'}
-		{You need a '\noexpand\examiner' in the preamble of the document}
 }
 \DeclareRobustCommand*{\examiner}[1]{%
 	\renewcommand{\@miunthesis@examiner}{#1}
@@ -162,9 +133,6 @@
 }
 
 \newcommand{\@miunthesis@supervisor}{%
-	\ClassError{miunthesis}
-		{Missing `\noexpand\supervisor'}
-		{You need a '\noexpand\supervisor' in the preamble of the document}
 }
 \DeclareRobustCommand*{\supervisor}[1]{%
 	\renewcommand{\@miunthesis@supervisor}{#1}
@@ -179,7 +147,6 @@
         \fi
     }
 
-
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
@@ -187,41 +154,87 @@
 
 \renewcommand{\headrulewidth}{0pt}
 
+
+\newcommand{\printsubtitle}{%
+\ifdefined\@miunthesis@subtitle{%
+  \large{ \@miunthesis@subtitle }\\
+  }
+  \else{%
+  }
+  \fi
+}
+
+\newcommand*{\printcourseandreg}{%
+  \ifdefined\@miunthesis@coursecode{
+    \ifdefined\@miunthesis@registrationnr{
+      \footnotesize{\textbf{\translate{Course code}/\translate{Registration number}:} \@miunthesis@coursecode /
+              \@miunthesis@registrationnr}\\
+    }
+    \else{
+      \footnotesize{\textbf{\translate{Course code}:} \@miunthesis@coursecode}\\
+    }
+    \fi
+  }
+  \else{
+    \ifdefined\@miunthesis@registrationnr{
+      \footnotesize{\textbf{\translate{Registration number}:} \@miunthesis@registrationnr}\\
+    }
+    \fi
+  }
+  \fi
+}
+
+\newcommand{\printprogramme}{%
+\ifdefined\@miunthesis@studyprogramme{%
+  \footnotesize{\textbf{\translate{Programme}:} \@miunthesis@studyprogramme}\\
+  }
+  \else{%
+  }
+  \fi
+}
+
+
+
 \newif\if@titlepage
 \@titlepagetrue
 
 \if@titlepage
   \renewcommand\maketitle{\begin{titlepage}%
-  \setlength\headheight{59pt}
-  \renewcommand{\headrulewidth}{0pt}
+  \newgeometry{headsep=30pt,
+                left=35mm,
+                right=45mm,
+                top=16mm,
+                bottom=12mm,
+                includehead,
+                includefoot}
   \thispagestyle{fancy}
+  \setlength{\headheight}{59pt}
   \fancyhf{}
   \rhead{\includegraphics[width=41mm]{Pictures/miun_logo.png}}
   \fancyfoot{}
     \vspace*{0.5cm}
-    \fontfamily{phv}\selectfont{%
-      \Large{\textbf{\@title}}}
-      \\
-      \\
-      \large{ \@miunthesis@subtitle }
+    \fontfamily{phv}
+    \LARGE{\textbf{\@title}}
     \\
+    \\
+    \printsubtitle
     \\
     \\
     \large \@author \par
-    \vspace*{13cm}
+    \vspace*{115mm}
 
-    \fontfamily{phv}
-    \renewcommand{\arraystretch}{0.5}
-    \begin{tabular}{l}
-      \footnotesize{\@miunthesis@coursename}\\
-      \footnotesize{\textbf{\translate{Main field of study}:} \@miunthesis@fieldofstudy}\\
-      \footnotesize{\textbf{\translate{Credits}:} \@miunthesis@coursecredits}\\
-      \footnotesize{\textbf{\translate{Semester}, \translate{Year}:} \@miunthesis@semester, \the\year{}}\\
-      \footnotesize{\textbf{\translate{Supervisor}:} \@miunthesis@supervisor}\\
-      \footnotesize{\textbf{\translate{Examiner}:} 
-          \@miunthesis@examiner}\\
-      \footnotesize{\textbf{\translate{Degree programme}:} \@miunthesis@studyprogramme, \@miunthesis@studyprogrammecredits}\\
-    \end{tabular}
+
+    \begin{spacing}{1.2}
+    \footnotesize{\@miunthesis@projecttype}\\
+    \footnotesize{\textbf{\translate{Main field of study}:} \@miunthesis@fieldofstudy}\\
+    \footnotesize{\textbf{\translate{Credits}:} \@miunthesis@coursecredits}\\
+    \footnotesize{\textbf{\translate{Semester}, \translate{Year}:} \@miunthesis@semester, \the\year{}}\\
+    \footnotesize{\textbf{\translate{Supervisor}:} \@miunthesis@supervisor}\\
+    \footnotesize{\textbf{\translate{Examiner}:} 
+        \@miunthesis@examiner}\\
+    \printcourseandreg
+    \printprogramme
+    \end{spacing}
     
   \vfil\null
   \end{titlepage}%
@@ -234,7 +247,11 @@
   \global\let\author\relax
   \global\let\date\relax
   \global\let\and\relax
+  \restoregeometry
 }
+  \pagestyle{fancy}
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
 
 \renewcommand\section{\@startsection{section}{1}
                                     {\z@}% indent

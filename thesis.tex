@@ -1,4 +1,5 @@
 \documentclass[english]{miunthesis}
+%\documentclass[swedish]{miunthesis}
 \usepackage{csquotes}
 \usepackage{booktabs}
 \usepackage{float}
@@ -7,27 +8,25 @@
 
 \addbibresource{literature.bib}
 
-\title{Main Title}
+\title{Title}
 \subtitle{Subtitle}
 \author{Author}
 
-\courseid{DTXXX}
-\coursename{Independent degree project}
-\coursecredits{30 hp}
+\projecttype{course name/specialisation from the course syllabus}
 
 \fieldofstudy{Computer Science}
-\studyprogramme{Master programme}
-\studyprogrammecredits{120 hp}
+\coursecredits{30 hp}
 
-\examiner{Nomen Nescio}
 \supervisor{John Doe}
+\examiner{Nomen Nescio}
+
+\coursecode{DTXXX} % Optional
+\registrationnr{DT-085H-WER} % Optional
+
+\studyprogramme{Master programme} % Optional
 
 \begin{document}
   \maketitle
-  
-  \pagestyle{fancy}
-  \fancyhf{}
-  \fancyfoot[C]{\thepage}
   \pagenumbering{roman}
   \include{00-abstract}
   \newpage
