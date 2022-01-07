@@ -210,7 +210,7 @@
   \thispagestyle{fancy}
   \setlength{\headheight}{59pt}
   \fancyhf{}
-  \rhead{\includegraphics[width=41mm]{Pictures/miun_logo.png}}
+  \rhead{\includegraphics[width=41mm]{Figures/miun_logo.png}}
   \fancyfoot{}
     \vspace*{0.5cm}
     \fontfamily{phv}

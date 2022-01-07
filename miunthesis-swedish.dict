@@ -18,14 +18,32 @@
 \providetranslation{Overall aim}{Syfte}
 \providetranslation{Introduction}{Inledning}
 \providetranslation{Scope}{Avgränsningar}
-\providetranslation{Concrete and verifiable goals}{Precisering av frågeställningen}
-\providetranslation{Outline}{Rapportens disposition}
-\providetranslation{Contributions}{Författarnas bidrag}
+\providetranslation{Problem statement}{Problemformulering}
+\providetranslation{Scientific goals}{Vetenskapsmål}
+\providetranslation{Knowledge goals}{Kunskapsmål}
+\providetranslation{Research questions}{Forskningsfrågor}
+\providetranslation{Outline}{Översikt}
+\providetranslation{Division of work}{Fördelning av arbetet}
 \providetranslation{Theory}{Teori}
-\providetranslation{Method}{Metod}
-\providetranslation{Construction}{Konstruktion}
+\providetranslation{Related work}{Relaterat arbete}
+\providetranslation{Methodology}{Metod}
+\providetranslation{Scientific method description}{Vetenskaplig metod}
+\providetranslation{Project method description}{Projektmetod}
+\providetranslation{Evaluation method}{Utvärderingsmetod}
+\providetranslation{Choice of solution}{Val av lösning}
+\providetranslation{Pre study}{Förstudie}
+\providetranslation{Solution alternatives}{Lösningsalternativ}
+\providetranslation{Comparison of solutions}{Jämförelse av lösningar}
+\providetranslation{Chosen solution}{Vald lösning}
+\providetranslation{Implementation}{Implementation}
+\providetranslation{Measurement}{Mätuppställning}
+\providetranslation{Evaluation Setup}{Utvärderingupplägg}
 \providetranslation{Result}{Resultat}
 \providetranslation{Discussion}{Diskussion}
+\providetranslation{Analysis and discussion of results}{Diskussion och analys av resultat}
+\providetranslation{Project method discussion}{Metodsdiskussion}
+\providetranslation{Scientific discussion}{Vetenskaplig diskussion}
+\providetranslation{Ethical and societal discussion}{Etiska och samhälleliga aspekter}
 \providetranslation{Conclusion}{Slutsats}
 \providetranslation{References}{Referenser}
 \providetranslation{Appendice}{Bilaga}

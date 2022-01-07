@@ -18,15 +18,34 @@
 \providetranslation{Overall aim}{Overall aim}
 \providetranslation{Introduction}{Introduction}
 \providetranslation{Scope}{Scope}
-\providetranslation{Concrete and verifiable goals}{Concrete and verifiable goals}
+\providetranslation{Problem statement}{Problem statement}
+\providetranslation{Scientific goals}{Scientific goals}
+\providetranslation{Knowledge goals}{Knowledge goals}
+\providetranslation{Research questions}{Research questions}
 \providetranslation{Outline}{Outline}
-\providetranslation{Contributions}{Contribution}
+\providetranslation{Division of work}{Division of work}
 \providetranslation{Theory}{Theory}
-\providetranslation{Method}{Method}
-\providetranslation{Construction}{Construction}
+\providetranslation{Related work}{Related work}
+\providetranslation{Methodology}{Methodology}
+\providetranslation{Scientific method description}{Scientific method description}
+\providetranslation{Project method description}{Project method description}
+\providetranslation{Evaluation method}{Evaluation method}
+\providetranslation{Choice of solution}{Choice of solution}
+\providetranslation{Pre study}{Pre study}
+\providetranslation{Solution alternatives}{Solution alternatives}
+\providetranslation{Comparison of solutions}{Comparison of solutions}
+\providetranslation{Chosen solution}{Chosen solution}
+\providetranslation{Implementation}{Implementation}
+\providetranslation{Measurement}{Measurement}
+\providetranslation{Evaluation Setup}{Evaluation setup}
 \providetranslation{Result}{Result}
 \providetranslation{Discussion}{Discussion}
+\providetranslation{Analysis and discussion of results}{Analysis and discussion of results}
+\providetranslation{Project method discussion}{Project method discussion}
+\providetranslation{Scientific discussion}{Scientific discussion}
+\providetranslation{Ethical and societal discussion}{Ethical and societal discussion}
 \providetranslation{Conclusion}{Conclusion}
+\providetranslation{Future Work}{Future Work}
 \providetranslation{Appendice}{Appendice}
 \providetranslation{List of Figures}{List of Figures}
 \providetranslation{List of Tables}{List of Tables}
