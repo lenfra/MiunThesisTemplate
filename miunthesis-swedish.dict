@@ -30,7 +30,6 @@
 \providetranslation{Scientific method description}{Vetenskaplig metod}
 \providetranslation{Project method description}{Projektmetod}
 \providetranslation{Evaluation method}{Utvärderingsmetod}
-\providetranslation{Choice of solution}{Val av lösning}
 \providetranslation{Pre study}{Förstudie}
 \providetranslation{Solution alternatives}{Lösningsalternativ}
 \providetranslation{Comparison of solutions}{Jämförelse av lösningar}
@@ -45,6 +44,7 @@
 \providetranslation{Scientific discussion}{Vetenskaplig diskussion}
 \providetranslation{Ethical and societal discussion}{Etiska och samhälleliga aspekter}
 \providetranslation{Conclusion}{Slutsats}
+\providetranslation{Future Work}{Framtida arbete}
 \providetranslation{References}{Referenser}
 \providetranslation{Appendice}{Bilaga}
 \providetranslation{List of Figures}{Figurer}
