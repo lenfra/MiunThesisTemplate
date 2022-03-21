@@ -15,12 +15,10 @@
 \providetranslation{Terminology}{Terminology}
 \providetranslation{Introduction}{Introduction}
 \providetranslation{Background and motivation}{Background and motivation}
-\providetranslation{Overall aim}{Overall aim}
+\providetranslation{Overall aim and problem statement}{Overall aim and problem statement} 
 \providetranslation{Introduction}{Introduction}
 \providetranslation{Scope}{Scope}
-\providetranslation{Problem statement}{Problem statement}
 \providetranslation{Scientific goals}{Scientific goals}
-\providetranslation{Knowledge goals}{Knowledge goals}
 \providetranslation{Research questions}{Research questions}
 \providetranslation{Outline}{Outline}
 \providetranslation{Division of work}{Division of work}
@@ -29,19 +27,28 @@
 \providetranslation{Methodology}{Methodology}
 \providetranslation{Scientific method description}{Scientific method description}
 \providetranslation{Project method description}{Project method description}
-\providetranslation{Evaluation method}{Evaluation method}
+\providetranslation{Project evaluation method}{Project evaluation method}
 \providetranslation{Pre study}{Pre study}
-\providetranslation{Solution alternatives}{Solution alternatives}
-\providetranslation{Comparison of solutions}{Comparison of solutions}
-\providetranslation{Chosen solution}{Chosen solution}
+\providetranslation{Approach}{Approach}
+\providetranslation{Requirements capturing}{Requirements capturing}
+\providetranslation{Approach alternatives}{Approach alternatives}
+\providetranslation{Requirement analysis}{Requirement analysis}
+\providetranslation{Comparison of approaches}{Comparison of approaches}
+\providetranslation{Proposed approach}{Proposed approach}
+\providetranslation{Chosen approach}{Chosen approach}
 \providetranslation{Implementation}{Implementation}
+\providetranslation{Design}{Design}
 \providetranslation{Measurement}{Measurement}
-\providetranslation{Evaluation Setup}{Evaluation setup}
-\providetranslation{Result}{Result}
+\providetranslation{Evaluation setup}{Evaluation setup}
+\providetranslation{Results}{Results}
+\providetranslation{Resulting application}{Resulting application}
+\providetranslation{Resulting system}{Resulting system}
 \providetranslation{Discussion}{Discussion}
 \providetranslation{Analysis and discussion of results}{Analysis and discussion of results}
 \providetranslation{Project method discussion}{Project method discussion}
 \providetranslation{Scientific discussion}{Scientific discussion}
+\providetranslation{Consequence analysis}{Consequence analysis}
+\providetranslation{Recommendation}{Recommendation}
 \providetranslation{Ethical and societal discussion}{Ethical and societal discussion}
 \providetranslation{Conclusion}{Conclusion}
 \providetranslation{Future Work}{Future Work}

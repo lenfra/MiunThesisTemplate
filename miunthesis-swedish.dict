@@ -15,12 +15,10 @@
 \providetranslation{Terminology}{Terminologi}
 \providetranslation{Introduction}{Inledning}
 \providetranslation{Background and motivation}{Bakgrund och motivering}
-\providetranslation{Overall aim}{Syfte}
+\providetranslation{Overall aim and problem statement}{Syfte och problemformulering}
 \providetranslation{Introduction}{Inledning}
 \providetranslation{Scope}{Avgränsningar}
-\providetranslation{Problem statement}{Problemformulering}
 \providetranslation{Scientific goals}{Vetenskapsmål}
-\providetranslation{Knowledge goals}{Kunskapsmål}
 \providetranslation{Research questions}{Forskningsfrågor}
 \providetranslation{Outline}{Översikt}
 \providetranslation{Division of work}{Fördelning av arbetet}
@@ -29,19 +27,28 @@
 \providetranslation{Methodology}{Metod}
 \providetranslation{Scientific method description}{Vetenskaplig metod}
 \providetranslation{Project method description}{Projektmetod}
-\providetranslation{Evaluation method}{Utvärderingsmetod}
+\providetranslation{Project evaluation method}{Utvärderingsmetod}
 \providetranslation{Pre study}{Förstudie}
-\providetranslation{Solution alternatives}{Lösningsalternativ}
-\providetranslation{Comparison of solutions}{Jämförelse av lösningar}
-\providetranslation{Chosen solution}{Vald lösning}
+\providetranslation{Approach}{Ansats}
+\providetranslation{Requirements capturing}{Kravfångst}
+\providetranslation{Approach alternatives}{Ansatsalternativ}
+\providetranslation{Requirement analysis}{Kravanalys}
+\providetranslation{Comparison of approaches}{Jämförelse av ansatser}
+\providetranslation{Proposed approach}{Föreslagen ansats}
+\providetranslation{Chosen approach}{Vald ansats}
 \providetranslation{Implementation}{Implementation}
+\providetranslation{Design}{Design}
 \providetranslation{Measurement}{Mätuppställning}
-\providetranslation{Evaluation Setup}{Utvärderingupplägg}
-\providetranslation{Result}{Resultat}
+\providetranslation{Evaluation setup}{Utvärderingupplägg}
+\providetranslation{Results}{Resultat}
+\providetranslation{Resulting application}{Färdiga applikationen}
+\providetranslation{Resulting system}{Färdiga systemet}
 \providetranslation{Discussion}{Diskussion}
 \providetranslation{Analysis and discussion of results}{Diskussion och analys av resultat}
 \providetranslation{Project method discussion}{Metodsdiskussion}
 \providetranslation{Scientific discussion}{Vetenskaplig diskussion}
+\providetranslation{Consequence analysis}{Konsekvensanalys}
+\providetranslation{Recommendation}{Rekommendation}
 \providetranslation{Ethical and societal discussion}{Etiska och samhälleliga aspekter}
 \providetranslation{Conclusion}{Slutsats}
 \providetranslation{Future Work}{Framtida arbete}
