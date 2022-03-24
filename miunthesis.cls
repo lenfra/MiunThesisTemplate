@@ -22,6 +22,8 @@
 \RequirePackage{mathpazo}
 \RequirePackage{verbatimbox}
 \RequirePackage{setspace}
+\RequirePackage{graphicx}
+\RequirePackage{pdfpages}
 
 
 %Set timeformat
