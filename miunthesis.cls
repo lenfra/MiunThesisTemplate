@@ -293,3 +293,7 @@
 \renewcommand{\cftsecpagefont}{\sffamily}
 \renewcommand{\cftsubsecpagefont}{\sffamily}
 \renewcommand{\cftsubsubsecpagefont}{\sffamily}
+
+%% List of Figures, Tables
+\renewcommand{\cftloftitlefont}{\large\bfseries\sffamily}
+\renewcommand{\cftlottitlefont}{\large\bfseries\sffamily}
