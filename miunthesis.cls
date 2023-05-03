@@ -285,7 +285,6 @@
                                       {\ssfamily\normalsize\bfseries}}
 
 %% Table of Contents
-\renewcommand{\listalgorithmname}{\translate{List of Algorithms}}
 
 \renewcommand{\cftsecfont}{\bfseries\sffamily}
 \renewcommand{\cftsubsecfont}{\sffamily}
@@ -295,5 +294,6 @@
 \renewcommand{\cftsubsubsecpagefont}{\sffamily}
 
 %% List of Figures, Tables
+\renewcommand{\listalgorithmname}{\large\bfseries\sffamily List of Algorithms\vspace*{18pt}}
 \renewcommand{\cftloftitlefont}{\large\bfseries\sffamily}
 \renewcommand{\cftlottitlefont}{\large\bfseries\sffamily}
