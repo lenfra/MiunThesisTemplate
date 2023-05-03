@@ -294,6 +294,6 @@
 \renewcommand{\cftsubsubsecpagefont}{\sffamily}
 
 %% List of Algorithm, Figures, Tables
-\renewcommand{\listalgorithmname}{\large\bfseries\sffamily List of Algorithms\vspace*{18pt}}
+\renewcommand{\listalgorithmname}{\large\bfseries\sffamily\translate{List of Algorithms}\vspace*{18pt}}
 \renewcommand{\cftloftitlefont}{\large\bfseries\sffamily}
 \renewcommand{\cftlottitlefont}{\large\bfseries\sffamily}
