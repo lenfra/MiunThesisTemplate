@@ -74,11 +74,11 @@
 
 \@ifpackageloaded{babel}
     {%TRUE
-        \addto\captionsenglish{
+        \addto\captionsenglish{%
             \renewcommand{\contentsname}%
             {\sffamily{Table of Contents}}%
         }
-        \addto\captionsswedish{
+        \addto\captionsswedish{%
             \renewcommand{\contentsname}%
             {\sffamily{Innehållsförteckning}}%
         }
@@ -86,9 +86,24 @@
     {
         %FALSE
     }
-
-
 }
+
+\newcommand\printabstract{%
+  \iflanguage{swedish}{%
+      \include{00-sammanfattning}
+      \newpage
+      \include{00-abstract}
+      \newpage
+    }
+    {%
+      \include{00-abstract}
+      \newpage
+      \IfFileExists{00-sammanfattning}{%
+        \include{00-sammanfattning}
+        \newpage}
+      {}
+    }
+  }
 
 \newcommand{\subtitle}[1]{
   \newcommand{\@miunthesis@subtitle}{{#1}}

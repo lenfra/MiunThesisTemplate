@@ -4,8 +4,8 @@
 %When writing your thesis in Swedish, only change in the documentclass from English to Swedish. All
 %section headings that have a translate will automatically be changed to the swedish translation.
 
+%\documentclass[english]{miunthesis}
 \documentclass[english]{miunthesis}
-%\documentclass[swedish]{miunthesis}
 \usepackage{csquotes}
 \usepackage{booktabs}
 \usepackage{float}
@@ -36,8 +36,7 @@
   \pagenumbering{roman}
   \includepdf[pages=1]{Diva_publish.pdf}
   \newpage
-  \include{00-abstract}
-  \newpage
+  \printabstract
   
   \include{00-acknowledgements}
   \newpage
