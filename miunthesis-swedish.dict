@@ -32,8 +32,9 @@
 \providetranslation{Project method description}{Projektmetod}
 \providetranslation{Work method description}{Arbetsmetod}
 \providetranslation{Project evaluation method}{Utvärderingsmetod}
-\providetranslation{Pre study}{Förstudie}
-\providetranslation{Approach}{Ansats}
+\providetranslation{Choice of approach}{Val av angrepssätt}
+\providetranslation{System design}{Systemdesign}
+\providetranslation{Pre-study}{Inledande studie}
 \providetranslation{Requirements capturing}{Kravfångst}
 \providetranslation{Approach alternatives}{Ansatsalternativ}
 \providetranslation{Requirement analysis}{Kravanalys}
