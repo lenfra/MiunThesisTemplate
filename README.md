@@ -1,2 +1,3 @@
 # MiunThesisTemplate
-LaTeX template used at the IST department at Mid Sweden University for thesis-projects.
+LaTeX template for computer engineering thesis projects at the DET department
+at Mid Sweden University.
