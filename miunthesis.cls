@@ -4,15 +4,11 @@
 \ProvidesClass{miunthesis}
 
 %% Required packages
-
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[]{babel}
-
-
 \RequirePackage[]{translator}
 \usedictionary{miunthesis}
-
 \RequirePackage{algorithm}
 \RequirePackage{etoolbox}
 
@@ -24,7 +20,6 @@
 \RequirePackage{setspace}
 \RequirePackage{graphicx}
 \RequirePackage{pdfpages}
-
 
 %Set timeformat
 \RequirePackage[yyyymmdd]{datetime}
@@ -48,9 +43,10 @@
 
 \RequirePackage[a4paper,
                 left=35mm,
-                right=45mm,
-                top=38mm,
-                bottom=12mm,
+                right=40mm,
+                top=37mm,
+                bottom=35mm,
+                headsep=15mm,
                 includehead,
                 includefoot]
                 {geometry}
@@ -61,7 +57,7 @@
 \RequirePackage{varioref, prettyref}
 \RequirePackage{hyperref}
 \RequirePackage{cleveref}
-\RequirePackage[backend=biber,citestyle=ieee, backref]{biblatex}
+\RequirePackage[backend=biber, style=ieee]{biblatex}
 
 \setlength\bibitemsep{0.5\baselineskip}
 
@@ -166,11 +162,8 @@
 
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
-
 \renewcommand{\dateseparator}{--}
-
 \renewcommand{\headrulewidth}{0pt}
-
 
 \newcommand{\printsubtitle}{%
 \ifdefined\@miunthesis@subtitle{%
@@ -210,8 +203,6 @@
   \fi
 }
 
-
-
 \newif\if@titlepage
 \@titlepagetrue
 
@@ -239,7 +230,6 @@
     \\
     \large \@author \par
     \vspace*{115mm}
-
 
     \begin{spacing}{1.2}
     \footnotesize{\@miunthesis@projecttype}\\
@@ -270,11 +260,13 @@
   \fancyhf{}
   \fancyfoot[C]{\thepage}
 
+\linespread{1.05}
+
 \renewcommand\section{\@startsection{section}{1}
                                     {\z@}% indent
                                     {2.85pt \@plus -1ex \@minus -.2ex}% beforeskip
                                     {1pt \@plus.2ex}% afterskip
-                                    {\sffamily\LARGE\bfseries}}
+                                    {\sffamily\Huge\bfseries}}
                                     
 \renewcommand\subsection{\@startsection{subsection}{2}
                                     {\z@}% indent
@@ -299,14 +291,38 @@
                                        {1pt \@plus -1ex \@minus -.2ex}%
                                       {\ssfamily\normalsize\bfseries}}
 
-%% Table of Contents
+\makeatletter
 
-\renewcommand{\cftsecfont}{\bfseries\sffamily}
-\renewcommand{\cftsubsecfont}{\sffamily}
-\renewcommand{\cftsubsubsecfont}{\sffamily}
-\renewcommand{\cftsecpagefont}{\sffamily}
-\renewcommand{\cftsubsecpagefont}{\sffamily}
-\renewcommand{\cftsubsubsecpagefont}{\sffamily}
+\renewcommand{\@seccntformat}[1]{%
+  \makebox[0pt][r]{\csname the#1\endcsname\hspace{1.2em}}%
+}
+
+\makeatother
+
+%% Table of Contents
+\renewcommand{\contentsname}{Table of Contents}
+% Title style
+\renewcommand{\cfttoctitlefont}{\sffamily\bfseries\Huge}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\setlength{\cftbeforetoctitleskip}{0pt}
+\setlength{\cftaftertoctitleskip}{12pt}
+% Global entry font
+\renewcommand{\cftsecfont}{\bfseries\rmfamily\normalsize}
+\renewcommand{\cftsecpagefont}{\rmfamily\normalsize}
+\renewcommand{\cftsubsecfont}{\rmfamily\normalsize}
+\renewcommand{\cftsubsecpagefont}{\rmfamily\normalsize}
+\renewcommand{\cftsubsubsecfont}{\rmfamily\normalsize}
+\renewcommand{\cftsubsubsecpagefont}{\rmfamily\normalsize}
+% Dot leaders
+\renewcommand{\cftdotsep}{1}
+% Vertical spacing between entries
+\setlength{\cftbeforesecskip}{0pt}
+\setlength{\cftbeforesubsecskip}{0pt}
+\setlength{\cftbeforesubsubsecskip}{0pt}
+% Indentation and number widths
+\cftsetindents{section}{0em}{2.8em}
+\cftsetindents{subsection}{0em}{2.8em}
+\cftsetindents{subsubsection}{0em}{2.8em}
 
 %% List of Algorithm, Figures, Tables
 \renewcommand{\listalgorithmname}{\large\bfseries\sffamily\translate{List of Algorithms}\vspace*{18pt}}

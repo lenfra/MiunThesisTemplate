@@ -1,10 +1,9 @@
 %Author of the LaTeX-class is Lennart Franked
 %Main author of the contents in the thesis template is Stefan Forsström at Mid Sweden University
 
-%When writing your thesis in Swedish, only change in the documentclass from English to Swedish. All
-%section headings that have a translate will automatically be changed to the swedish translation.
+%When writing your thesis in Swedish, only change in the documentclass from English to Swedish. All section headings that have a translate will automatically be changed to the swedish translation.
 
-%\documentclass[english]{miunthesis}
+%\documentclass[swedish]{miunthesis}
 \documentclass[english]{miunthesis}
 \usepackage{csquotes}
 \usepackage{booktabs}
@@ -20,7 +19,7 @@
 
 \projecttype{course name/specialisation from the course syllabus}
 
-\fieldofstudy{Computer Science}
+\fieldofstudy{Computer Engineering}
 \coursecredits{30 hp}
 
 \supervisor{John Doe}
@@ -29,7 +28,7 @@
 \coursecode{DTXXX} % Optional
 \registrationnr{DT-085H-WER} % Optional
 
-\studyprogramme{Master programme} % Optional
+\studyprogramme{Master of Science in Engineering: Computer Engineering} % Optional
 
 \begin{document}
   \maketitle
@@ -44,20 +43,20 @@
   \tableofcontents
   \newpage
 
-  \phantomsection
-  \listoffigures
-  \addcontentsline{toc}{section}{\translate{List of Figures}}
-  \newpage
+  % \phantomsection
+  % \listoffigures
+  % \addcontentsline{toc}{section}{\translate{List of Figures}}
+  % \newpage
 
-  \phantomsection
-  \listoftables
-  \addcontentsline{toc}{section}{\translate{List of Tables}}
-  \newpage
+  % \phantomsection
+  % \listoftables
+  % \addcontentsline{toc}{section}{\translate{List of Tables}}
+  % \newpage
 
-  \phantomsection
-  \listofalgorithms
-  \addcontentsline{toc}{section}{\translate{List of Algorithms}}
-  \newpage
+  % \phantomsection
+  % \listofalgorithms
+  % \addcontentsline{toc}{section}{\translate{List of Algorithms}}
+  % \newpage
 
   \include{00-terminology}
   \newpage
